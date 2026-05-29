@@ -1,0 +1,225 @@
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Noto+Sans+SC:wght@400;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+.page{font-family:'Noto Sans SC',sans-serif;padding:8px 0}
+.post-card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:16px;margin-bottom:14px;overflow:hidden}
+.post-header{padding:14px 16px 10px;display:flex;align-items:center;gap:10px}
+.char-dot{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Nunito',sans-serif;font-size:11px;font-weight:900;color:#fff}
+.post-meta{flex:1}
+.post-num{font-size:10px;font-weight:700;color:var(--color-text-tertiary);letter-spacing:1px;text-transform:uppercase;margin-bottom:2px}
+.post-angle{font-size:12px;font-weight:500;color:var(--color-text-secondary)}
+.copy-btn{font-size:11px;padding:5px 10px;border-radius:20px;cursor:pointer;white-space:nowrap;flex-shrink:0}
+.post-body{padding:0 16px 14px}
+.cover-line{font-size:16px;font-weight:700;color:var(--color-text-primary);line-height:1.4;margin-bottom:8px;font-family:'Nunito',sans-serif}
+.post-text{font-size:13px;color:var(--color-text-secondary);line-height:1.8;margin-bottom:10px;white-space:pre-line}
+.hashtags{display:flex;flex-wrap:wrap;gap:5px}
+.tag{font-size:11px;padding:3px 9px;border-radius:20px;font-weight:700;cursor:pointer}
+.t-red{background:#FFF0EE;color:#b82000}
+.t-green{background:#EAF3DE;color:#27500A}
+.t-blue{background:#E6F1FB;color:#0C447C}
+.t-yellow{background:#FFFBEA;color:#7a5c00}
+.t-pink{background:#FBEAF0;color:#72243E}
+.t-orange{background:#FFF5EC;color:#854F0B}
+.divider-bar{height:3px;border-radius:0}
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#1a1a1a;color:#fff;font-size:12px;padding:8px 18px;border-radius:20px;opacity:0;pointer-events:none;transition:opacity .3s;font-family:'Noto Sans SC',sans-serif;z-index:999}
+.toast.show{opacity:1}
+</style>
+
+<h2 class="sr-only">BonBonVita 小红书文案 5 条，IP卡通风格，涵盖反差萌、产地故事、角色人格、节气种草和互动挑战五个角度</h2>
+
+<div class="page">
+
+<div class="post-card">
+  <div class="divider-bar" style="background:#F93B21"></div>
+  <div class="post-header">
+    <div class="char-dot" style="background:#F93B21">红</div>
+    <div class="post-meta">
+      <div class="post-num">No.1</div>
+      <div class="post-angle">反差萌 · 外表凶猛内心甜</div>
+    </div>
+    <button class="copy-btn" onclick="copyPost(1)"><i class="ti ti-copy" aria-hidden="true"></i> 复制</button>
+  </div>
+  <div class="post-body">
+    <div class="cover-line">「长得这么凶，居然一点都不辣？！」</div>
+    <div class="post-text" id="text1">第一次见到红椒椒的时候，我以为自己要被辣哭。
+结果咬下去——是甜的。
+甜得有点不讲道理的那种。
+
+这就是来自云南玉溪海拔1620米的BonBon椒。
+个头大、颜色深、样子凶……
+但它就是不辣，只有让你意想不到的清甜。
+
+红椒椒说：「我只是长得认真而已。」</div>
+    <div class="hashtags">
+      <span class="tag t-red">#大彩椒</span>
+      <span class="tag t-green">#云南好物</span>
+      <span class="tag t-red">#BonBonVita</span>
+      <span class="tag t-yellow">#反差萌</span>
+      <span class="tag t-green">#甜椒种草</span>
+    </div>
+  </div>
+</div>
+
+<div class="post-card">
+  <div class="divider-bar" style="background:#008400"></div>
+  <div class="post-header">
+    <div class="char-dot" style="background:#008400">绿</div>
+    <div class="post-meta">
+      <div class="post-num">No.2</div>
+      <div class="post-angle">产地故事 · 云南海拔孕育</div>
+    </div>
+    <button class="copy-btn" onclick="copyPost(2)"><i class="ti ti-copy" aria-hidden="true"></i> 复制</button>
+  </div>
+  <div class="post-body">
+    <div class="cover-line">「海拔1620米，阳光太好，我们都长甜了」</div>
+    <div class="post-text" id="text2">云南玉溪的天，晴得有点夸张。
+
+BonBon椒们每天在1620米的高原上晒太阳，
+慢慢地、慢慢地……
+把阳光都存进了身体里。
+
+所以你咬开它的时候，
+尝到的不只是一颗彩椒，
+是整个云南夏天的味道。
+
+黄椒椒说：「这里空气都是甜的，我们能不甜吗？」</div>
+    <div class="hashtags">
+      <span class="tag t-green">#云南玉溪</span>
+      <span class="tag t-blue">#高原蔬菜</span>
+      <span class="tag t-green">#产地直发</span>
+      <span class="tag t-yellow">#BonBonVita</span>
+      <span class="tag t-green">#天然无公害</span>
+    </div>
+  </div>
+</div>
+
+<div class="post-card">
+  <div class="divider-bar" style="background:#7C2E2E"></div>
+  <div class="post-header">
+    <div class="char-dot" style="background:#7C2E2E">咖</div>
+    <div class="post-meta">
+      <div class="post-num">No.3</div>
+      <div class="post-angle">角色人格 · 咖椒椒好奇宝宝</div>
+    </div>
+    <button class="copy-btn" onclick="copyPost(3)"><i class="ti ti-copy" aria-hidden="true"></i> 复制</button>
+  </div>
+  <div class="post-body">
+    <div class="cover-line">「咖椒椒今天问了一个问题……」</div>
+    <div class="post-text" id="text3">咖椒椒：「为什么我是棕色的？」
+
+红椒椒：「因为你体内的营养不一样啊。」
+咖椒椒：「那我是不是最稀有的那个？」
+红椒椒：「……你就是最奇怪的那个。」
+
+咖椒椒不服气地鼓了鼓腮帮子，
+然后自己跑去吃了一口——嗯，还是甜的。
+
+BonBon家族里，每个颜色都藏着不一样的能量。
+咖椒椒：神秘、稀有、好奇心爆棚，
+还有你不知道的丰富营养。</div>
+    <div class="hashtags">
+      <span class="tag t-orange">#咖椒椒</span>
+      <span class="tag t-pink">#BonBon家族</span>
+      <span class="tag t-red">#大彩椒</span>
+      <span class="tag t-green">#可爱IP</span>
+      <span class="tag t-yellow">#营养蔬菜</span>
+    </div>
+  </div>
+</div>
+
+<div class="post-card">
+  <div class="divider-bar" style="background:#FFCE00"></div>
+  <div class="post-header">
+    <div class="char-dot" style="background:#FFCE00;color:#7a5c00">黄</div>
+    <div class="post-meta">
+      <div class="post-num">No.4</div>
+      <div class="post-angle">节气种草 · 夏日消暑搭配</div>
+    </div>
+    <button class="copy-btn" onclick="copyPost(4)"><i class="ti ti-copy" aria-hidden="true"></i> 复制</button>
+  </div>
+  <div class="post-body">
+    <div class="cover-line">「夏天太上头，来颗BonBon椒冷静一下」</div>
+    <div class="post-text" id="text4">暑假第一天，热到不想动。
+
+黄椒椒来敲门了：
+「我切片放冰箱冻一下，配酸奶当零食——
+脆、甜、凉，比任何水果都好吃！」
+
+橘椒椒补充：「我可以榨汁！颜色好看拍照超出片！」
+咖椒椒小声说：「我炒蛋……也很好吃……」
+
+夏天的BonBon椒，
+生吃、榨汁、炒菜都是它，
+颜色好看还补维C，
+今年夏天不吃白吃。</div>
+    <div class="hashtags">
+      <span class="tag t-yellow">#夏日食谱</span>
+      <span class="tag t-green">#彩椒吃法</span>
+      <span class="tag t-blue">#健康轻食</span>
+      <span class="tag t-red">#BonBonVita</span>
+      <span class="tag t-pink">#维C补充</span>
+    </div>
+  </div>
+</div>
+
+<div class="post-card">
+  <div class="divider-bar" style="background:#FF7C10"></div>
+  <div class="post-header">
+    <div class="char-dot" style="background:#FF7C10">橘</div>
+    <div class="post-meta">
+      <div class="post-num">No.5</div>
+      <div class="post-angle">互动挑战 · 你是哪颗BonBon椒</div>
+    </div>
+    <button class="copy-btn" onclick="copyPost(5)"><i class="ti ti-copy" aria-hidden="true"></i> 复制</button>
+  </div>
+  <div class="post-body">
+    <div class="cover-line">「测一测：你是BonBon家族的哪颗椒？」</div>
+    <div class="post-text" id="text5">BonBon椒家族有四个成员，
+你是哪一颗？
+
+红椒椒：外向、热情、永远是第一个开口讲话的人
+黄椒椒：温柔、治愈、朋友都喜欢找你倾诉
+橘椒椒：活力满满、说走就走、朋友圈最多动态
+咖椒椒：爱观察、有点奇怪、但脑洞超级大
+
+评论区告诉我你是谁！
+
+PS：不管你是哪颗，
+我们都一样——
+看起来凶，其实超甜。</div>
+    <div class="hashtags">
+      <span class="tag t-pink">#人格测试</span>
+      <span class="tag t-red">#BonBon家族</span>
+      <span class="tag t-orange">#互动话题</span>
+      <span class="tag t-green">#BonBonVita</span>
+      <span class="tag t-blue">#你是哪颗椒</span>
+    </div>
+  </div>
+</div>
+
+<div style="display:flex;gap:10px;padding:4px 0 8px">
+  <button onclick="sendPrompt('帮我把这5条文案做成一个30天小红书内容日历，搭配发布时间和主题策略')" style="flex:1;font-size:13px;padding:10px">制定30天内容日历 ↗</button>
+  <button onclick="sendPrompt('帮BonBonVita设计一套抖音短视频脚本，IP卡通风格，5个不同主题')" style="flex:1;font-size:13px;padding:10px">生成抖音脚本 ↗</button>
+</div>
+
+</div>
+
+<div class="toast" id="toast">已复制到剪贴板</div>
+
+<script>
+const texts={
+  1:`【封面文案】\n长得这么凶，居然一点都不辣？！\n\n第一次见到红椒椒的时候，我以为自己要被辣哭。\n结果咬下去——是甜的。\n甜得有点不讲道理的那种。\n\n这就是来自云南玉溪海拔1620米的BonBon椒。\n个头大、颜色深、样子凶……\n但它就是不辣，只有让你意想不到的清甜。\n\n红椒椒说：「我只是长得认真而已。」\n\n#大彩椒 #云南好物 #BonBonVita #反差萌 #甜椒种草`,
+  2:`【封面文案】\n海拔1620米，阳光太好，我们都长甜了\n\n云南玉溪的天，晴得有点夸张。\n\nBonBon椒们每天在1620米的高原上晒太阳，\n慢慢地、慢慢地……\n把阳光都存进了身体里。\n\n所以你咬开它的时候，\n尝到的不只是一颗彩椒，\n是整个云南夏天的味道。\n\n黄椒椒说：「这里空气都是甜的，我们能不甜吗？」\n\n#云南玉溪 #高原蔬菜 #产地直发 #BonBonVita #天然无公害`,
+  3:`【封面文案】\n咖椒椒今天问了一个问题……\n\n咖椒椒：「为什么我是棕色的？」\n\n红椒椒：「因为你体内的营养不一样啊。」\n咖椒椒：「那我是不是最稀有的那个？」\n红椒椒：「……你就是最奇怪的那个。」\n\n咖椒椒不服气地鼓了鼓腮帮子，\n然后自己跑去吃了一口——嗯，还是甜的。\n\nBonBon家族里，每个颜色都藏着不一样的能量。\n咖椒椒：神秘、稀有、好奇心爆棚，\n还有你不知道的丰富营养。\n\n#咖椒椒 #BonBon家族 #大彩椒 #可爱IP #营养蔬菜`,
+  4:`【封面文案】\n夏天太上头，来颗BonBon椒冷静一下\n\n暑假第一天，热到不想动。\n\n黄椒椒来敲门了：\n「我切片放冰箱冻一下，配酸奶当零食——\n脆、甜、凉，比任何水果都好吃！」\n\n橘椒椒补充：「我可以榨汁！颜色好看拍照超出片！」\n咖椒椒小声说：「我炒蛋……也很好吃……」\n\n夏天的BonBon椒，\n生吃、榨汁、炒菜都是它，\n颜色好看还补维C，\n今年夏天不吃白吃。\n\n#夏日食谱 #彩椒吃法 #健康轻食 #BonBonVita #维C补充`,
+  5:`【封面文案】\n测一测：你是BonBon家族的哪颗椒？\n\nBonBon椒家族有四个成员，\n你是哪一颗？\n\n红椒椒：外向、热情、永远是第一个开口讲话的人\n黄椒椒：温柔、治愈、朋友都喜欢找你倾诉\n橘椒椒：活力满满、说走就走、朋友圈最多动态\n咖椒椒：爱观察、有点奇怪、但脑洞超级大\n\n评论区告诉我你是谁！\n\nPS：不管你是哪颗，\n我们都一样——\n看起来凶，其实超甜。\n\n#人格测试 #BonBon家族 #互动话题 #BonBonVita #你是哪颗椒`
+};
+function copyPost(n){
+  navigator.clipboard.writeText(texts[n]).then(()=>{
+    const t=document.getElementById('toast');
+    t.classList.add('show');
+    setTimeout(()=>t.classList.remove('show'),2000);
+  });
+}
+</script>
